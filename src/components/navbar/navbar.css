@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@theme {
+  --color-dark: #444;
+  --color-light: #fff;
+}
+@layer component {
+  .Navbar {
+    @apply w-full h-16 flex items-center justify-between px-7 bg-linear-to-r/oklab  from-[#c5b358] to-[#BDB76B] text-light relative;
+  }
+  .logo {
+    @apply uppercase font-semibold text-2xl tracking-wider;
+  }
+  .mnav {
+    @apply hidden md:flex items-center gap-12;
+  }
+  .navlist {
+    @apply p-4 hover:bg-[#b5a642] rounded-md transition-all cursor-pointer text-xl font-bold;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Raleway&family=Source+Sans+Pro&display=swap");
+
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}

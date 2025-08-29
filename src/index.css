@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Raleway&family=Source+Sans+Pro&display=swap");
+@theme {
+  --color-dark: #444;
+  --color-light: #fff;
+  --breakpoint-x: 700px;
+}
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.diagonalbg {
+  position: relative;
+}
+.diagonalbg::after {
+  content: "";
+
+  background: linear-gradient(#c5b358, #bdb76b);
+  position: absolute;
+  inset: 0;
+  transform: skewY(6deg);
+  z-index: -1;
+}
+
+.diagonalbg1 {
+  position: relative;
+}
+
+.diagonalbg1::after {
+  content: "";
+  border-radius: 22% 27% 26% 24% / 100% 23% 58% 100%;
+  background: linear-gradient(#c5b358, #bdb76b);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.diagonalbg2 {
+  position: relative;
+}
+
+.diagonalbg2::after {
+  content: "";
+  border-radius: 13% 5% 4% 14% / 79% 8% 9% 78%;
+  background: linear-gradient(#c5b358, #bdb76b);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.ql-container {
+  border: none !important;
+}
+.ql-toolbar {
+  border: none !important;
+}
+.ql-editor {
+  border: none !important;
+}

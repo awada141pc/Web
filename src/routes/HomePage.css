@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@theme {
+  --color-dark: #444;
+  --color-light: #fff;
+}
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+@layer base {
+  h1 {
+    @apply text-center text-dark my-4 py-3;
+  }
+}
+@layer components {
+  .Bookshelf {
+    @apply m-0 p-0 flex flex-col items-center justify-center;
+  }
+}
