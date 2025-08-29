@@ -1,12 +1,14 @@
 import Tiptap from "../components/texteditor/Texteditor";
 
 const Write = () => {
-  const { isLoaded, isSignedIn } = useUser();
+  {
+    /* const { isLoaded, isSignedIn } = useUser();
   if (!isLoaded) {
     return <div>Loading...</div>;
   }
   if (isLoaded && !isSignedIn) {
     return <div>Log in to read chapter!</div>;
+  }*/
   }
   return (
     <div className=" flex flex-col gap-6 text-dark">
