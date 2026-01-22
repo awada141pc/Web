@@ -2,15 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import Homepage from "./routes/Homepage.jsx";
-import PostListPage from "./routes/PostListPage.jsx";
+import PostListPage from "./routes/PostListPage";
 import Write from "./routes/Write.jsx";
-import ReactDOM from "react-dom/client";
-import SinglePostPage from "./routes/SinglePostPage.jsx";
-import MainLayout from "./layouts/Mainlayout.jsx";
+import SinglePostPage from "./routes/SinglePostPage";
+import MainLayout from "./layouts/MainLayout";
 import TloiM from "./routes/Tloim.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
